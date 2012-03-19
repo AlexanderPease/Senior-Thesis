@@ -1,0 +1,15 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic representation of cQED. The center pin is shown with an oscillating electromagnetic wave confined in the cavity. The capacitor gaps isolating the resonator act as mirrors containing the radiation. The cavity is coupled to a nearby qubit, here placed in the dielectric gap near the center of the resonator. A circuit schematic is also shown. Figure modified from \cite {Schuster}.}}{13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Jaynes-Cummings model. Green represents the EM field, blue represents the two-level quantum system and yellow the coupling between the two. The three rates $g$, $\kappa $ and $\gamma $ are schematically illustrated. In a cQED implementation, the cavity is replaced by a transmission line and the ``mirrors" shown are capacitors in the line. From \cite {Semba}.}}{17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Left: Model of the transmission spectrum of a bare cavity. Higher order harmonics are integer multiples of resonant frequency $\omega _r$. The linewidth ETC. Right: Model of the transmission spectrum of a coupled cavity-qubit system at resonance. The ETC}}{20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Energy level diagrams of the Jaynes-Cummings Hamiltonian. From \cite {Schuster}.}}{21}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces FIX TO BE GENERAL}}{22}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces CAPTION. Figure from \cite {SchusterResolving}.}}{23}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces ADD CAPTION. From \cite {Schuster}.}}{25}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces ADD CAPTION. From \cite {Schuster}.}}{26}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ADD CAPTION. Figures \cite {Bishop}.}}{30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A transmission line resonator as an infinite chain of discrete LC oscillators. Figures \cite {Bishop}.}}{31}
+\addvspace {10\p@ }
