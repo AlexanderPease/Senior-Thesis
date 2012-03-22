@@ -20,5 +20,5 @@
 \contentsline {section}{\numberline {4.2}Transmission lines}{29}
 \contentsline {subsection}{\numberline {4.2.1}Coplanar waveguide cavities}{33}
 \contentsline {section}{\numberline {4.3}Transmons}{33}
-\contentsline {section}{\numberline {4.4}Cavity-Qubit coupling}{34}
-\contentsline {chapter}{\numberline {5}Experimental methods and results}{35}
+\contentsline {section}{\numberline {4.4}Cavity-Qubit coupling}{35}
+\contentsline {chapter}{\numberline {5}Experimental methods and results}{37}

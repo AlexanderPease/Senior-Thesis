@@ -711,11 +711,11 @@ The transmission line, shown in Fig. (\ref{fig:CPW}) as having width $a$,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transmons}
-As discussed in Section \ref{sec:DiVincenzo}, the qubit is designed to be a two-level system. I have already shown that the quantized harmonic oscillator (which describes the transmission line) has a infinite, linear spectrum of energy levels. It is therefore impossible to isolate any two energy levels as computational basis states, such that driving a transition between these two levels will not also populate other, erroneous energy levels. 
+As discussed in Section \ref{sec:DiVincenzo}, the qubit is designed to be a two-level system. I have already shown that quantized harmonic oscillators have a infinite, linear spectrum of energy levels. It is therefore impossible to isolate any two energy levels as computational basis states, such that driving a transition between these two levels will not also populate other, erroneous energy levels. 
 
 A two-level quantum system is achieved by introducing anharmonicity. While an anharmonic circuit is not strictly two-level, as many energy levels exist, a good superconducting qubit is designed to have sufficient anharmonicity such that it is effectively two-level within a specific frequency range. The Josephson junction\cite{Devoret2004}, the only known dissipationless nonlinear circuit, is used in many superconducting qubit designs, including the transmon. 
 
-The transmon, a transmission-line shunted plasma oscillation qubit\cite{Koch}, was chosen as the qubit design for this thesis. The circuit design, modified from the Cooper pair box\cite{Bouchiat, NakamuraCoherent}, consists of two superconducting islands coupled by two Josephson junctions. As there is no connection between the islands, Cooper pairs tunnel across the dielectric gap. The charge operator $n=-q/2e$ measures the difference between the islands measured in units of the Cooper pair charge $2e$. Due to this discreteness, the behavior of the Josephson element is periodic in flux $-E_J\cos((2e/\hbar)\phi)$. 
+The transmission-line shunted plasma oscillation qubit\cite{Koch}, otherwise known as the \emph{transmon}, was used for this thesis. The circuit design, modified from the Cooper pair box\cite{Bouchiat, NakamuraCoherent}, consists of two superconducting islands coupled by two Josephson junctions. As there is no connection between the islands, Cooper pairs tunnel across the dielectric gap. The charge operator $n=-q/2e$ measures the difference between the islands measured in units of the Cooper pair charge $2e$. Due to this discreteness, the behavior of the Josephson element is periodic in flux $-E_J\cos((2e/\hbar)\phi)$. 
 
 IS GATE VOLTAGE OR FLUX THE FLUX BIAS LINE? WHAT IS PHI?
 
@@ -727,12 +727,50 @@ H=\frac{q^2}{2C}-E_J\cos\left(   \frac{2e}{\hbar}\phi     \right)
 
 which can be in the standard form
 
-\begin{equation}
+\begin{equation}\label{eq:TransmonHamiltonian}
 H=4E_C(n-n_g)^2-E_J\cos\varphi
 \end{equation}
 
-using identities for the charging energy $E_C=e^2/2C$ and gauge invariant phase $\varphi=(2e/\hbar)\phi$. The charge offset $n_g=Q_r/2e+CgVg/2e$ arises from the DC voltage $V_g$ of the flux bias line (gate) or charges from any other stray couplings $Q_g$. 
+using identities for the charging energy $E_C=e^2/2C$ and gauge invariant phase $\varphi=(2e/\hbar)\phi$. The charge offset $n_g=Q_r/2e+CgVg/2e$ arises from the DC voltage $V_g$ of the flux bias line (gate) or charges from any other stray couplings $Q_g$. Appendix B of Ref. \cite{Koch} solves for eigenenergies in terms of Mathieu functions
 
+\begin{equation}
+E_m(n_g)=E_C a_{2[n_g+k(m,n_g)]}(-E_J/2E_C)
+\end{equation}
+
+where $a_\nu(q)$ denotes Mathieu's characteristic value and $k(m, n_g)$ is a function for sorting eigenvalues. The Hamiltonian, then, clearly depends on the ratio of the Josephson and charging energies $E_J/E_C$ as well as the effective offset charge $n_g$. Fig. (\ref{fig:KochEigenenergies}) plots the eigenvalues for various energy ratios. Two things are immediately noticeable. First, anharmonicity of qubit is inversely proportional to the ratio $E_J/E_C$. Second, the eigenenergies flatten with increasing $E_J/E_C$. We can better understand this by introducing the \emph{charge dispersion}, $\epsilon_m$, defined as the peak-to-peak energy range for the $m^{\mathrm{th}}$ eigenvalue as $n_g$ is varied
+
+\begin{equation}\label{eq:ChargeDispersion}
+\epsilon_m \equiv E_m(n_g=1/2)-E_m(n_g=0)
+\end{equation}
+
+\begin{figure}[h] 
+   \centering
+   \includegraphics[width=3in]{placeholder.jpg} 
+   \caption{ \cite{Koch}.}
+   \label{fig:KochEigenenergies}
+\end{figure}
+
+For large $E_J/E_C$, the dispersion relation is well-approximated by
+
+\begin{equation}
+E_m(n_g)\approx E_m(n_g=1/2)-\frac{\epsilon_m}{2}\cos(2\pi n_g)
+\end{equation}
+
+While Eq. (\ref{eq:ChargeDispersion}) is the exact identity, Ref. \cite{Koch} used WKB methods to solve for the asymptotic behavior of the charge dispersion for $E_J/E_C\gg 1$. The resulting expression
+
+\begin{equation}
+\epsilon_m\approx(-1)^m E_C \frac{2^{4m+5}}{m!}\sqrt{\frac{2}{\pi}}\left(\frac{E_J}{2E_C} \right)^{\frac{m}{2}+\frac{3}{4}}e^{-\sqrt{8E_J/E_C}}
+\end{equation}
+
+reveals the crucial exponential decrease of the charge dispersion with $\sqrt{E_J/E_C}$.
+
+The strength this qubit design is revealed by comparing this exponential charge dispersion relation to the anharmonic behavior of the transmon. As $E_C\gg E_J$, we can expand the Hamiltonian (\ref{eq:TransmonHamiltonian}) to fourth order
+
+\begin{equation}
+H=4E_Cn^2-E_J +\frac{E_J\varphi^2}{2}-\frac{E_J\varphi^4}{24}
+\end{equation}
+ 
+The $n_g$ dependence has been removed as it as negligible in this regime. 
 
 
 %

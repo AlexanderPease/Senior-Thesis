@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  15 MAR 2012 23:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  19 MAR 2012 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -354,6 +354,9 @@ LaTeX Warning: Citation `Bishop' on page 7 undefined on input line 13.
 
 LaTeX Warning: Citation `Bishop' on page 7 undefined on input line 14.
 
+
+LaTeX Warning: Citation `Koch' on page 7 undefined on input line 15.
+
 )
 \tf@lof=\write4
 \openout4 = `apeaseThesis.lof'.
@@ -621,11 +624,26 @@ LaTeX Warning: Citation `NakamuraCoherent' on page 33 undefined on input line 7
 LaTeX Warning: Reference `fig:ChargeQubit' on page 33 undefined on input line 7
 22.
 
-[33] [34]
-Chapter 5.
-[35
+
+LaTeX Warning: Citation `Koch' on page 33 undefined on input line 734.
+
+[33]
+File: placeholder.jpg Graphic file (type jpg)
+ <use placeholder.jpg>
+Package pdftex.def Info: placeholder.jpg used on input line 748.
+(pdftex.def)             Requested size: 216.81pt x 216.8129pt.
+
+
+LaTeX Warning: Citation `Koch' on page 34 undefined on input line 749.
+
+
+LaTeX Warning: Citation `Koch' on page 34 undefined on input line 759.
+
+[34] [35] [36
 
 ]
+Chapter 5.
+[37]
 No file apeaseThesis.bbl.
 (./apeaseThesis.aux)
 
@@ -636,10 +654,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3318 strings out of 493633
- 44943 string characters out of 3143378
- 112027 words of memory out of 3000000
- 6535 multiletter control sequences out of 15000+200000
+ 3321 strings out of 493633
+ 45011 string characters out of 3143378
+ 112062 words of memory out of 3000000
+ 6538 multiletter control sequences out of 15000+200000
  16333 words of font info for 65 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  38i,11n,43p,1278b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -664,10 +682,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2011/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on apeaseThesis.pdf (35 pages, 553491 bytes).
+Output written on apeaseThesis.pdf (37 pages, 560141 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 228 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
