@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  19 MAR 2012 00:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  29 MAR 2012 01:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -18,8 +18,8 @@ ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
 .
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -195,23 +195,23 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (./apeaseThesis.aux
 
-LaTeX Warning: Label `eq:Matrix' multiply defined.
+LaTeX Warning: Label `fig:Wirebonding' multiply defined.
 
 )
 \openout1 = `apeaseThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
  (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
@@ -275,377 +275,306 @@ e
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
-* v-part:(T,H,B)=(85.35826pt, 614.21436pt, 95.39737pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 433.62001pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 627.30263pt, 95.39737pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=614.21436pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=13.08827pt
+* \textwidth=433.62001pt
+* \textheight=627.30263pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=0.0pt
 * \headheight=0.0pt
 * \headsep=0.0pt
-* \topskip=12.0pt
-* \footskip=85.35826pt
-* \marginparwidth=98.0pt
+* \topskip=11.0pt
+* \footskip=72.26999pt
+* \marginparwidth=62.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 100.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 101.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-{/Users/AlexanderPease/Library/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [
-3] [4]
+{/Users/AlexanderPease/Library/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1] [
+2]
 (./apeaseThesis.toc)
 \tf@toc=\write3
 \openout3 = `apeaseThesis.toc'.
 
- [5
+ [3
 
-] [6
-
-] (./apeaseThesis.lof
-
-LaTeX Warning: Citation `Schuster' on page 7 undefined on input line 2.
-
-
-LaTeX Warning: Citation `Semba' on page 7 undefined on input line 4.
-
-
-LaTeX Warning: Citation `Schuster' on page 7 undefined on input line 6.
-
-
-LaTeX Warning: Citation `SchusterResolving' on page 7 undefined on input line 8
-.
-
-
-LaTeX Warning: Citation `Schuster' on page 7 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Schuster' on page 7 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Bishop' on page 7 undefined on input line 13.
-
-
-LaTeX Warning: Citation `Bishop' on page 7 undefined on input line 14.
-
-
-LaTeX Warning: Citation `Koch' on page 7 undefined on input line 15.
-
-)
+] (./apeaseThesis.lof)
 \tf@lof=\write4
 \openout4 = `apeaseThesis.lof'.
 
- [7] [8
+ [4
 
 ] (./apeaseThesis.lot)
 \tf@lot=\write5
 \openout5 = `apeaseThesis.lot'.
 
- [9] [10
+ [5
 
 ]
+[6] [7]
 Chapter 1.
+[8
 
-LaTeX Warning: Citation `Schuster' on page 11 undefined on input line 166.
-
-
-LaTeX Warning: Citation `Vahala2003' on page 11 undefined on input line 168.
-
-[11]
-
-LaTeX Warning: Citation `Schuster' on page 12 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Schuster' on page 12 undefined on input line 172.
-
-
-LaTeX Warning: Citation `Berman' on page 12 undefined on input line 176.
-
-<SchustercQEDSchematic.png, id=44, 662.475pt x 356.33125pt>
+] <SchustercQEDSchematic.png, id=39, 662.475pt x 356.33125pt>
 File: SchustercQEDSchematic.png Graphic file (type png)
 
 <use SchustercQEDSchematic.png>
-Package pdftex.def Info: SchustercQEDSchematic.png used on input line 196.
+Package pdftex.def Info: SchustercQEDSchematic.png used on input line 220.
 (pdftex.def)             Requested size: 216.81pt x 116.61641pt.
 
 
-LaTeX Warning: Citation `Schuster' on page 12 undefined on input line 197.
-
-
-LaTeX Warning: Citation `Schuster' on page 12 undefined on input line 197.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
+[9]
 
-LaTeX Warning: Citation `Devoret2004' on page 13 undefined on input line 203.
+LaTeX Warning: Citation `Luger' on page 10 undefined on input line 252.
 
-
-LaTeX Warning: Reference `sec:' on page 13 undefined on input line 203.
-
-
-LaTeX Warning: Reference `sec:' on page 13 undefined on input line 203.
-
-
-LaTeX Warning: Citation `Nakamura1999' on page 13 undefined on input line 203.
-
-[13 <./SchustercQEDSchematic.png>]
-
-LaTeX Warning: Citation `Luger' on page 14 undefined on input line 233.
-
-[14]
+[10 <./SchustercQEDSchematic.png>] [11]
 Chapter 2.
+[12
 
-LaTeX Warning: Citation `DiVincenzo' on page 15 undefined on input line 250.
-
-[15
-
-] <Semba-Toy-cQED.png, id=63, 454.69875pt x 186.6975pt>
+] <Semba-Toy-cQED.png, id=60, 454.69875pt x 186.6975pt>
 File: Semba-Toy-cQED.png Graphic file (type png)
 
 <use Semba-Toy-cQED.png>
-Package pdftex.def Info: Semba-Toy-cQED.png used on input line 270.
+Package pdftex.def Info: Semba-Toy-cQED.png used on input line 291.
 (pdftex.def)             Requested size: 216.81pt x 89.02122pt.
 
 
-LaTeX Warning: Citation `Semba' on page 16 undefined on input line 271.
+LaTeX Warning: Citation `Semba' on page 13 undefined on input line 292.
 
 
-LaTeX Warning: Citation `Semba' on page 16 undefined on input line 271.
+LaTeX Warning: Citation `Semba' on page 13 undefined on input line 292.
+
+[13 <./Semba-Toy-cQED.png (PNG copy)>] [14] [15] [16]
+<Goppl-Higher-Modes.png, id=79, 712.6625pt x 484.81125pt>
+File: Goppl-Higher-Modes.png Graphic file (type png)
+
+<use Goppl-Higher-Modes.png>
+Package pdftex.def Info: Goppl-Higher-Modes.png used on input line 436.
+(pdftex.def)             Requested size: 180.67499pt x 122.90396pt.
+ <placeholder.jpg, id=80, 501.875pt x 501.875pt>
+File: placeholder.jpg Graphic file (type jpg)
+
+<use placeholder.jpg>
+Package pdftex.def Info: placeholder.jpg used on input line 436.
+(pdftex.def)             Requested size: 180.67499pt x 180.67485pt.
+
+
+LaTeX Warning: Citation `Goppl' on page 17 undefined on input line 437.
+
+
+LaTeX Warning: Citation `Goppl' on page 17 undefined on input line 437.
+
+[17 <./Goppl-Higher-Modes.png> <./placeholder.jpg>]
+<SchusterResonantEnergyLevels.png, id=85, 661.47125pt x 480.79625pt>
+File: SchusterResonantEnergyLevels.png Graphic file (type png)
+
+<use SchusterResonantEnergyLevels.png>
+Package pdftex.def Info: SchusterResonantEnergyLevels.png used on input line 46
+6.
+(pdftex.def)             Requested size: 252.94499pt x 183.84894pt.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+
+<SchusterAvoidedCrossing.png, id=86, 926.46124pt x 581.17125pt>
+File: SchusterAvoidedCrossing.png Graphic file (type png)
+
+<use SchusterAvoidedCrossing.png>
+Package pdftex.def Info: SchusterAvoidedCrossing.png used on input line 477.
+(pdftex.def)             Requested size: 289.07999pt x 181.34065pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16]
+[18 <./SchusterResonantEnergyLevels.png>]
 
-LaTeX Warning: Citation `Schuster' on page 17 undefined on input line 279.
-
-[17 <./Semba-Toy-cQED.png (PNG copy)>] [18] [19]
-<placeholder.jpg, id=83, 501.875pt x 501.875pt>
-File: placeholder.jpg Graphic file (type jpg)
- <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 408.
-(pdftex.def)             Requested size: 180.67499pt x 180.67485pt.
- [20 <./placeholder.jpg>]
-<SchusterResonantEnergyLevels.png, id=88, 661.47125pt x 480.79625pt>
-File: SchusterResonantEnergyLevels.png Graphic file (type png)
-
-<use SchusterResonantEnergyLevels.png>
-Package pdftex.def Info: SchusterResonantEnergyLevels.png used on input line 43
-8.
-(pdftex.def)             Requested size: 289.07999pt x 210.1204pt.
+LaTeX Warning: Citation `Zhu' on page 19 undefined on input line 492.
 
 
-LaTeX Warning: Citation `Schuster' on page 21 undefined on input line 439.
+LaTeX Warning: Citation `Tian' on page 19 undefined on input line 492.
 
-[21 <./SchusterResonantEnergyLevels.png>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
-
-
-LaTeX Warning: Citation `Bishop' on page 22 undefined on input line 445.
-
-<ElizaAvoidedCrossing.png, id=93, 675.52374pt x 327.2225pt>
-File: ElizaAvoidedCrossing.png Graphic file (type png)
-
-<use ElizaAvoidedCrossing.png>
-Package pdftex.def Info: ElizaAvoidedCrossing.png used on input line 449.
-(pdftex.def)             Requested size: 361.34999pt x 175.03983pt.
-
-Overfull \hbox (7.71725pt too wide) in paragraph at lines 463--463
-[]\OT1/cmr/bx/n/17.28 Anharmonicity: Climb-ing the Jaynes-Cummings
- []
-
-
-LaTeX Warning: Citation `Zhu' on page 22 undefined on input line 464.
-
-
-LaTeX Warning: Citation `Tian' on page 22 undefined on input line 464.
-
-
-LaTeX Warning: Citation `Fink' on page 22 undefined on input line 464.
-
-
-LaTeX Warning: Citation `Fink' on page 22 undefined on input line 464.
-
-
-LaTeX Warning: Citation `Hofheinz' on page 22 undefined on input line 464.
-
-
-LaTeX Warning: Citation `Wang' on page 22 undefined on input line 464.
-
-[22 <./ElizaAvoidedCrossing.png>]
-<HouckParameterSpace.png, id=98, 812.03375pt x 511.9125pt>
+[19 <./SchusterAvoidedCrossing.png>]
+<HouckParameterSpace.png, id=96, 812.03375pt x 511.9125pt>
 File: HouckParameterSpace.png Graphic file (type png)
 
 <use HouckParameterSpace.png>
-Package pdftex.def Info: HouckParameterSpace.png used on input line 473.
-(pdftex.def)             Requested size: 361.34999pt x 227.79643pt.
-
-
-LaTeX Warning: Citation `SchusterResolving' on page 23 undefined on input line 
-474.
-
-[23 <./HouckParameterSpace.png (PNG copy)>]
-
-LaTeX Warning: Citation `Schuster' on page 24 undefined on input line 508.
-
-<SchusterDispersiveEnergyLevels.png, id=102, 349.305pt x 425.59pt>
+Package pdftex.def Info: HouckParameterSpace.png used on input line 501.
+(pdftex.def)             Requested size: 289.07999pt x 182.23402pt.
+ [20 <./HouckParameterSpace.png (PNG copy)>]
+<SchusterDispersiveEnergyLevels.png, id=100, 914.41624pt x 725.71124pt>
 File: SchusterDispersiveEnergyLevels.png Graphic file (type png)
 
 <use SchusterDispersiveEnergyLevels.png>
 Package pdftex.def Info: SchusterDispersiveEnergyLevels.png used on input line 
-514.
-(pdftex.def)             Requested size: 144.54pt x 176.10352pt.
-
-
-LaTeX Warning: Citation `Schuster' on page 24 undefined on input line 515.
+542.
+(pdftex.def)             Requested size: 216.81pt x 172.05922pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `sec:DiVincezo' on page 24 undefined on input line 519
+LaTeX Warning: Reference `sec:DiVincezo' on page 21 undefined on input line 547
 .
 
-[24]
 
-LaTeX Warning: Reference `fig:DispersiveStrong' on page 25 undefined on input l
-ine 523.
+LaTeX Warning: Reference `fig:DispersiveStrong' on page 21 undefined on input l
+ine 551.
 
-<SchusterDispersiveFrequencyShifts.png, id=106, 366.36874pt x 247.92625pt>
+[21]
+<SchusterDispersiveFrequencyShifts.png, id=104, 366.36874pt x 247.92625pt>
 File: SchusterDispersiveFrequencyShifts.png Graphic file (type png)
 
 <use SchusterDispersiveFrequencyShifts.png>
 Package pdftex.def Info: SchusterDispersiveFrequencyShifts.png used on input li
-ne 527.
-(pdftex.def)             Requested size: 289.07999pt x 195.63638pt.
-
-
-LaTeX Warning: Citation `Schuster' on page 25 undefined on input line 528.
+ne 555.
+(pdftex.def)             Requested size: 252.94499pt x 171.17143pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./SchusterDispersiveEnergyLevels.png>] [26 <./SchusterDispersiveFrequencyS
-hifts.png>]
+[22 <./SchusterDispersiveEnergyLevels.png (PNG copy)>] [23 <./SchusterDispersiv
+eFrequencyShifts.png>]
 Chapter 3.
-[27
-
-] [28]
-Chapter 4.
-[29
-
-] <BishopLC.png, id=125, 183.68625pt x 182.6825pt>
-File: BishopLC.png Graphic file (type png)
- <use BishopLC.png>
-Package pdftex.def Info: BishopLC.png used on input line 599.
-(pdftex.def)             Requested size: 85.82802pt x 85.35826pt.
-
-
-LaTeX Warning: Citation `Bishop' on page 30 undefined on input line 600.
-
-
-LaTeX Warning: Citation `Bishop' on page 30 undefined on input line 604.
-
-
-LaTeX Warning: Citation `Schuster' on page 30 undefined on input line 604.
-
-[30 <./BishopLC.png>]
-
-LaTeX Warning: Citation `Pozar' on page 31 undefined on input line 642.
-
-
-LaTeX Warning: Citation `Bishop' on page 31 undefined on input line 642.
-
-<BishopLCChain.png, id=134, 584.1825pt x 170.6375pt>
-File: BishopLCChain.png Graphic file (type png)
- <use BishopLCChain.png>
-Package pdftex.def Info: BishopLCChain.png used on input line 650.
-(pdftex.def)             Requested size: 216.81pt x 63.33015pt.
-
-
-LaTeX Warning: Citation `Bishop' on page 31 undefined on input line 651.
-
-
-LaTeX Warning: Citation `Bishop' on page 31 undefined on input line 651.
-
-[31 <./BishopLCChain.png>]
-
-LaTeX Warning: Reference `:LCLagrangianIntegral' on page 32 undefined on input 
-line 688.
-
-[32]
-
-LaTeX Warning: Reference `fig:CPW' on page 33 undefined on input line 709.
-
-
-LaTeX Warning: Citation `Devoret2004' on page 33 undefined on input line 716.
-
-
-LaTeX Warning: Citation `Koch' on page 33 undefined on input line 718.
-
-
-LaTeX Warning: Citation `Bouchiat' on page 33 undefined on input line 718.
-
-
-LaTeX Warning: Citation `NakamuraCoherent' on page 33 undefined on input line 7
-18.
-
-
-LaTeX Warning: Reference `fig:ChargeQubit' on page 33 undefined on input line 7
-22.
-
-
-LaTeX Warning: Citation `Koch' on page 33 undefined on input line 734.
-
-[33]
-File: placeholder.jpg Graphic file (type jpg)
- <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 748.
-(pdftex.def)             Requested size: 216.81pt x 216.8129pt.
-
-
-LaTeX Warning: Citation `Koch' on page 34 undefined on input line 749.
-
-
-LaTeX Warning: Citation `Koch' on page 34 undefined on input line 759.
-
-[34] [35] [36
+[24
 
 ]
+Chapter 4.
+[25
+
+] <BishopLC.png, id=119, 183.68625pt x 182.6825pt>
+File: BishopLC.png Graphic file (type png)
+ <use BishopLC.png>
+Package pdftex.def Info: BishopLC.png used on input line 693.
+(pdftex.def)             Requested size: 85.82802pt x 85.35826pt.
+
+<BishopLCChain.png, id=120, 584.1825pt x 170.6375pt>
+File: BishopLCChain.png Graphic file (type png)
+ <use BishopLCChain.png>
+Package pdftex.def Info: BishopLCChain.png used on input line 693.
+(pdftex.def)             Requested size: 292.23314pt x 85.35826pt.
+
+[26 <./BishopLC.png> <./BishopLCChain.png>] [27]
+
+LaTeX Warning: Reference `:LCLagrangianIntegral' on page 28 undefined on input 
+line 782.
+
+[28]
+
+LaTeX Warning: Reference `fig:CPW' on page 29 undefined on input line 803.
+
+
+LaTeX Warning: Citation `Devoret2004' on page 29 undefined on input line 810.
+
+
+LaTeX Warning: Citation `Tinkham' on page 29 undefined on input line 814.
+
+[29] <Koch-Transmon-eigenenergies.png, id=135, 907.39pt x 698.61pt>
+File: Koch-Transmon-eigenenergies.png Graphic file (type png)
+
+<use Koch-Transmon-eigenenergies.png>
+Package pdftex.def Info: Koch-Transmon-eigenenergies.png used on input line 869
+.
+(pdftex.def)             Requested size: 361.34999pt x 278.2025pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31 <./Koch-Transmon-eigenenergies.png (PNG copy)>]
+<KochTransmon.png, id=143, 561.09625pt x 520.94624pt>
+File: KochTransmon.png Graphic file (type png)
+ <use KochTransmon.png>
+Package pdftex.def Info: KochTransmon.png used on input line 968.
+(pdftex.def)             Requested size: 233.5184pt x 216.81pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32] [33 <./KochTransmon.png>]
+
+LaTeX Warning: Reference `tab:ChipLengths' on page 34 undefined on input line 1
+025.
+
+
+LaTeX Warning: Reference `tab:ResonanceSpectrum' on page 34 undefined on input 
+line 1031.
+
+[34]
+File: placeholder.jpg Graphic file (type jpg)
+ <use placeholder.jpg>
+Package pdftex.def Info: placeholder.jpg used on input line 1046.
+(pdftex.def)             Requested size: 144.54pt x 144.53682pt.
+ <STS.jpg, id=154, 103.9885pt x 138.919pt>
+File: STS.jpg Graphic file (type jpg)
+
+<use STS.jpg>
+Package pdftex.def Info: STS.jpg used on input line 1046.
+(pdftex.def)             Requested size: 144.54pt x 193.09895pt.
+
+
+LaTeX Warning: Reference `fig:Mounts' on page 35 undefined on input line 1052.
+
+[35 <./STS.jpg>]
+File: placeholder.jpg Graphic file (type jpg)
+ <use placeholder.jpg>
+Package pdftex.def Info: placeholder.jpg used on input line 1062.
+(pdftex.def)             Requested size: 144.54pt x 144.53682pt.
+File: placeholder.jpg Graphic file (type jpg)
+ <use placeholder.jpg>
+Package pdftex.def Info: placeholder.jpg used on input line 1062.
+(pdftex.def)             Requested size: 144.54pt x 144.53682pt.
+
+<RaitheLine.jpg, id=158, 216.81pt x 162.6075pt>
+File: RaitheLine.jpg Graphic file (type jpg)
+ <use RaitheLine.jpg>
+Package pdftex.def Info: RaitheLine.jpg used on input line 1074.
+(pdftex.def)             Requested size: 216.81pt x 162.61453pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36] [37 <./RaitheLine.jpg>]
 Chapter 5.
-[37]
-No file apeaseThesis.bbl.
-(./apeaseThesis.aux)
+[38
+
+] (./apeaseThesis.bbl
+Underfull \hbox (badness 2772) in paragraph at lines 48--50
+[]\OT1/cmr/m/n/10.95 D. P. Di-Vin-cenzo, ``The phys-i-cal im-ple-men-ta-tion of
+ quan-tum com-pu-ta-tion,''
+ []
+
+[39
+
+]) [40] (./apeaseThesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -654,38 +583,36 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3321 strings out of 493633
- 45011 string characters out of 3143378
- 112062 words of memory out of 3000000
- 6538 multiletter control sequences out of 15000+200000
- 16333 words of font info for 65 fonts, out of 3000000 for 9000
+ 3369 strings out of 493633
+ 45876 string characters out of 3143378
+ 113176 words of memory out of 3000000
+ 6576 multiletter control sequences out of 15000+200000
+ 16958 words of font info for 66 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,43p,1278b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,16n,43p,1214b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2011
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2011/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2011/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on apeaseThesis.pdf (37 pages, 560141 bytes).
+usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2011/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on apeaseThesis.pdf (41 pages, 1014019 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
+ 238 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

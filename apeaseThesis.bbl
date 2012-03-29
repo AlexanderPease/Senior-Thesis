@@ -1,0 +1,93 @@
+\begin{thebibliography}{10}
+
+\bibitem{Shor}
+P.~W. Shor, ``Algorithms for quantum computation: discrete logarithms and
+  factoring,'' {\em Proceedings of the 35th Annual Symposium on Foundations of
+  Computer Science}, p.~124, 1994.
+
+\bibitem{Grover}
+L.~Grover, ``Quantum mechanics helps in searching for a needle in a haystack,''
+  {\em Physical Review Letters}, vol.~79, no.~2, pp.~325--328, 1997.
+
+\bibitem{Schuster}
+D.~I. Schuster, {\em Circuit Quantum Electrodynamics}.
+\newblock PhD thesis, Yale University, May 2007.
+
+\bibitem{Vahala}
+K.~J. Vahala, ``Optical microcavities,'' {\em Nature}, vol.~424, pp.~839--846,
+  August 2003.
+
+\bibitem{Purcell}
+E.~M. Purcell, ``Spontaneous emission probabilities at radio frequencies,''
+  {\em Physical Review}, vol.~69, p.~681, 1946.
+
+\bibitem{Berman}
+P.~Berman, {\em Cavity quantum electrodynamics}.
+\newblock Academic Press, Inc., 1250 Sixth Ave., San Diego, CA 92101-4311
+  (United States), Academic Press, Inc., Boston, MA (United States), 1994.
+
+\bibitem{Dutra}
+S.~M. Dutra, {\em Cavity Quantum Electrodynamics: The Strange Theory of Light
+  in a Box}.
+\newblock Wiley, 2004.
+
+\bibitem{Devoret}
+M.~H. Devoret, A.~Wallraff, and J.~M. Martinis, ``Superconducting qubits: A
+  short review.'' 2004.
+
+\bibitem{Clarke}
+J.~Clarke and F.~K. Wilhelm, ``Superconducting quantum bits,'' {\em Nature},
+  vol.~453, no.~19, pp.~1031--1042, 2008.
+
+\bibitem{Nakamura}
+Y.~Nakamura, Y.~A. Pashkin, and J.~S. Tsai, ``Coherent control of macroscopic
+  quantum states in a single-cooper-pair box,'' {\em Nature}, vol.~398,
+  no.~786, 1999.
+
+\bibitem{DiVincenzo}
+D.~P. DiVincenzo, ``The physical implementation of quantum computation,'' {\em
+  Fortschritte der Physik}, vol.~48, no.~9-11, pp.~771--783, 2000.
+
+\bibitem{Bishop}
+L.~S. Bishop, {\em Circuit Quantum Electrodynamics}.
+\newblock PhD thesis, Yale University, May 2010.
+
+\bibitem{Fink}
+J.~M. Fink, M.~Goeppl, M.~Baur, R.~Bianchetti, P.~J. Leek, A.~Blais, and
+  A.~Wallraff, ``Climbing the jaynes-cummings ladder and observing its sqrt(n)
+  nonlinearity in a cavity qed system,'' {\em Nature 454, 315-318 (Jul 2008)},
+  02 2009.
+
+\bibitem{Hofheinz}
+M.~Hofheinz, H.~Wang, M.~Ansmann, R.~C. Bialczak, M.~N. E.~Lucero, A.~D.
+  O'Connell, D.~Sank, J.~Wenner, J.~M. Martinis, and A.~N. Cleland,
+  ``Synthesizing arbitrary quantum states in a superconducting resonator,''
+  {\em Nature}, vol.~459, pp.~546--549, 2009.
+
+\bibitem{Wang}
+H.~Wang, ``Measurement of the decay of fock states in a superconducting quantum
+  circuit",'' {\em Phys. Rev. Lett.; Physical Review Letters}, vol.~101,
+  no.~24, 2008.
+
+\bibitem{SchusterResolving}
+D.~I. Schuster, A.~A. Houck, J.~A. Schreier, A.~Wallraff, J.~M. Gambetta,
+  A.~Blais, L.~Frunzio, B.~Johnson, M.~H. Devoret, S.~M. Girvin, and R.~J.
+  Schoelkopf, ``Resolving photon number states in a superconducting circuit,''
+  {\em Nature 445, 515-518 (Feb 2007)}, 2007.
+
+\bibitem{Pozar}
+D.~M. Pozar, {\em Microwave engineering}.
+\newblock Wiley, 2005.
+
+\bibitem{Koch}
+J.~Koch, T.~M. Yu, J.~Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
+  A.~Blais, M.~H. Devoret, S.~M. Girvin, and R.~J. Schoelkopf, ``Charge
+  insensitive qubit design derived from the cooper pair box,'' {\em Phys. Rev.
+  A}, vol.~76, p.~042319, 2007.
+
+\bibitem{Bouchiat}
+V.~Bouchiat, D.~Vion, P.~Joyez, D.~Esteve, and M.~H. Devoret, ``Quantum
+  coherence with a single cooper pair,'' {\em Phys. Scripta}, vol.~T76,
+  no.~165, 1998.
+
+\end{thebibliography}
