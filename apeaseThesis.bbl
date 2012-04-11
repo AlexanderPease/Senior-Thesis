@@ -48,6 +48,12 @@ Y.~Nakamura, Y.~A. Pashkin, and J.~S. Tsai, ``Coherent control of macroscopic
 D.~P. DiVincenzo, ``The physical implementation of quantum computation,'' {\em
   Fortschritte der Physik}, vol.~48, no.~9-11, pp.~771--783, 2000.
 
+\bibitem{Goppl}
+M.~G{\"o}ppl, A.~Fragner, M.~Baur, R.~Bianchetti, S.~Filipp, J.~M. Fink, P.~J.
+  Leek, G.~Puebla, L.~Steffen, and A.~Wallraff, ``Coplanar waveguide resonators
+  for circuit quantum electrodynamics,'' {\em J. Appl. Phys.}, vol.~104,
+  p.~113904, 2008.
+
 \bibitem{Bishop}
 L.~S. Bishop, {\em Circuit Quantum Electrodynamics}.
 \newblock PhD thesis, Yale University, May 2010.
@@ -78,6 +84,10 @@ D.~I. Schuster, A.~A. Houck, J.~A. Schreier, A.~Wallraff, J.~M. Gambetta,
 \bibitem{Pozar}
 D.~M. Pozar, {\em Microwave engineering}.
 \newblock Wiley, 2005.
+
+\bibitem{Tinkham}
+M.~Tinkham, {\em Introduction to superconductivity}.
+\newblock Krieger Publishing Company, 2~ed., January 2004.
 
 \bibitem{Koch}
 J.~Koch, T.~M. Yu, J.~Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,

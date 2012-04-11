@@ -249,7 +249,8 @@ While this thesis does not explore any of the actual computational possibilities
 %Information is inherently a physical quantity, and the physics of information is the physics of all matter [Landauer1991]
 
 \section{Outline}
-Having given a brief introduction to quantum computing and cQED, this thesis continues in a much more focused manner. Chapter \ref{chap:Multimodal} presents the theoretical concepts investigated in this thesis: highly multimodal photon-qubit strong coupling in superconducting cQED circuits. To our knowledge, no work has been published in this field. However, this thesis is in part motivated by the theoretical work of Hakan T\"{u}reci and the unpublished Masters thesis of one of his students, Rafael Luger\cite{Luger}. This work, Spontaneous decay in the multi-mode regime of cavity quantum electrodynamics, describes a possible new regime in which a qubit may \emph{simultaneously} couple to multiple modes of a cavity. This thesis presents initial experimental work into this regime. 
+Having given a brief introduction to quantum computing and cQED, this thesis continues in a much more focused manner. Chapter \ref{chap:Multimodal} presents the theoretical concepts investigated in this thesis: highly multimodal photon-qubit strong coupling in superconducting cQED circuits. While standard cQED operates typically couples the qubit only to the fundamental resonator frequency, it is theoretically possible to enter a new regime in which a qubit may \emph{simultaneously} couple to multiple modes of a cavity. We accomplish this by driving the resonator at high harmonics. To our knowledge, no work has been published in this field.  This thesis presents initial experimental work into the highly multimodal strong coupling regime. 
+
 
 In order to understand these concepts, Chapter \ref{chap:Theoretical} presents an overview of topics standard to the literature. I feel it is most useful to understand the physics without getting too bogged down in the details of this particular thesis. As such, Chapter \ref{chap:Theoretical} is at a high level and should be applicable to any cQED system. I begin with the Jaynes-Cummings model as a prototypical cavity QED system, and explain the potential for this model to fit into the DiVincenzo criteria for quantum computing. From this, more advanced concepts are explored, such as nonlinear vacuum Rabi phenomena, cQED regimes, and more. 
 
@@ -370,30 +371,29 @@ As stated in Chapter \ref{sec:JC}, the tuning parameter $\Delta$ affects the rat
 \section{Quantum states}
 With the Jaynes-Cummings model, we now understand how to parametrize the state of our system. A cQED circuit for a single cavity mode is described in two dimensions: (1) the qubit excitation state and (2) the number of photons in the cavity. We therefore describe the state of the entire system by a composite vector of the two subspaces. For example, the ground state of the entire system is given by $\ket{0,g}$, for which the qubit is in the ground state $g$ and there are no photons of the given frequency inside the cavity. 
 
-This allows us to obtain a matrix representation of the Hamiltonian (\ref{eq:JC}) 
-
-\begin{equation}\label{eq:Matrix}
-H =  \hbar\left(\begin{array}{cccccccc}
-%\ket{0,g}  & \ket{1,g} & \ket{0,e} & \ket{2,g} & \ket{1,e} & ... &\ket{n,g} & \ket{n-1,e}\\
-0 \\
-& \omega_r 	& g \\
-& g    		& \omega_a \\
-&&&2\omega_r	 & \sqrt{2}g \\
-&&&\sqrt{2}g 		& \omega_r + \omega_a\\
-&&&&&\ddots\\
-&&&&&&n\omega_r & \sqrt{n}g\\
-&&&&&&\sqrt{n}g    & (n-1)\omega_r+\omega_a
-\end{array} \right)
-\end{equation}
-
-by expressing it in the basis of the excitation subsystems
+By expressing the Jaynes-Cummings Hamiltonian (\ref{eq:JC})  in the basis of the excitation subsystems
 
 \begin{equation}
 \left(\begin{array}{cccccc} \ket{0,g} & \ket{1,g} & \ket{0,e} & ... & \ket{n, g} & \ket{n-1,e}
 \end{array}\right).
 \end{equation}
 
-The coupling term causes the matrix to be block diagonal by only connecting the states $\ket{n,g}$ and $\ket{n-1,e}$. With the exception of the ground state, we can examine any 2-by-2 submatrix to analytically solve for the $n^{th}$ excitation manifold
+we can solve for the matrix representation
+
+\begin{equation}\label{eq:Matrix}
+H =  \hbar\left(\begin{array}{cccccccc}
+0 \\
+& \omega_r-\frac{\Delta}{2}	& g \\
+& g    		& \omega_a-\frac{\Delta}{2} \\
+&&&2\omega_r-\frac{\Delta}{2}	 & g\sqrt{2} \\
+&&&g\sqrt{2}		& 2\omega_r + \frac{\Delta}{2}\\
+&&&&&\ddots\\
+&&&&&&n\omega_r-\frac{\Delta}{2} & g\sqrt{n}\\
+&&&&&&g\sqrt{n}    & n\omega_r+\frac{\Delta}{2}
+\end{array} \right)
+\end{equation}
+
+The coupling term causes the matrix to be block diagonal by only connecting the states $\ket{n,g}$ and $\ket{n-1,e}$. With the exception of the ground state, the 2-by-2 submatrix describing the $n^{th}$ excitation manifold is
 
 \begin{equation}
 \left(\begin{array}{cc}
@@ -405,7 +405,7 @@ n\omega_r-\frac{1}{2}\Delta 	& g\sqrt{n} \\
 \end{array}\right)
 \end{equation}
 
-which yields the ``dressed" eigenstates\footnote{The variable $\theta_n$ satisfies $\tan{2\theta_n}=\frac{2g\sqrt{n}}{\Delta}$.} 
+with yields the ``dressed" eigenstates\footnote{The variable $\theta_n$ satisfies $\tan{2\theta_n}=\frac{2g\sqrt{n}}{\Delta}$.} 
 
 \begin{eqnarray}
 \ket{n_+} &=& \sin(\theta_n)\ket{n,g}+\cos(\theta_n)\ket{n-1,e} \\
@@ -438,11 +438,11 @@ where $\delta \omega$ is the full width half maximum of the resonance. This rela
    \label{fig:Transmission1}
 \end{figure}
 
-However, resonance creates degeneracy in a coupled system. This can be observed by solving the Hamiltonian (\ref{eq:JC}) in the resonant limit. More specifically, so long $\Delta=|\omega_a-\omega_r|<<g$ we make the approximation $\omega_a=\omega_r$.\footnote{It's impossible for any lab setup to achieve perfection!} For a general subsystem of $n$ photons
+However, resonance creates degeneracy in a coupled system. This can be observed by solving the Hamiltonian (\ref{eq:JC}) in the resonant limit. More specifically, so long $|\Delta|=|\omega_a-\omega_r|<<g$ we make the approximation $\omega_a=\omega_r$.\footnote{It's impossible for any lab setup to achieve perfection!} For a general subsystem of $n$ photons
 
 \begin{equation}
 H_n = \hbar \left( \begin{array}{cc}
-n\omega{r} & \sqrt{n}g \\
+n\omega_r & g\sqrt{n} \\
 \sqrt{n}g & n\omega_r
 \end{array}\right)
 \end{equation}
@@ -459,7 +459,7 @@ and simplified dressed eigenstates
 \ket{n_{+,-}} = \frac{\ket{n,g}\pm\ket{n-1,e}}{\sqrt{2}}.
 \end{equation}
 
-Thus, coupling the atomic and cavity subsystems lifts the degeneracy by $2\sqrt{n}g$ at each energy level. a phenomena referred to as \emph{Vacuum Rabi splitting}. This creates an effective two-level system between the ground state $\ket{0,g}$ and antisymmetric eigenstate of the first excitation manifold $\ket{n_-}$, in which the transition energy between the two states is less than $\omega_r$. Fig. \ref{fig:EnergyLevels} shows both the degenerate and hybridized energy levels. 
+Thus, coupling the atomic and cavity subsystems lifts the degeneracy by $2g\sqrt{n}$ at each energy level. a phenomena referred to as \emph{Vacuum Rabi splitting}. This creates an effective two-level system between the ground state $\ket{0,g}$ and antisymmetric eigenstate of the first excitation manifold $\ket{n_-}$, in which the transition energy between the two states is less than $\omega_r$. Fig. \ref{fig:EnergyLevels} shows both the degenerate and hybridized energy levels. 
 
 \begin{figure}[h] 
    \centering
@@ -468,7 +468,7 @@ Thus, coupling the atomic and cavity subsystems lifts the degeneracy by $2\sqrt{
    \label{fig:EnergyLevels}
 \end{figure}
 
-A transmission measurement of the resonant, coupled system will show two transmission peaks around the resonant frequency $\omega_r$, one for each new eigenstate. Appropriately, this conveys the difference in eigenenergies, as the frequency splitting is $E_n/\hbar=2\sqrt{n}g$. PEAK WIDTHS? AFFECTS QUBIT STATE, HOW IS THIS DIFFERENT FROM DISPERSIVE MEASUREMENT?
+A transmission measurement of the resonant, coupled system will show two transmission peaks around the resonant frequency $\omega_r$, one for each new eigenstate. Appropriately, this conveys the difference in eigenenergies, as the frequency splitting is $E_n/\hbar=2g\sqrt{n}$. PEAK WIDTHS? AFFECTS QUBIT STATE, HOW IS THIS DIFFERENT FROM DISPERSIVE MEASUREMENT?
 
 In cQED the atom cannot be physically removed from the cavity to switch off the vacuum Rabi splitting —instead the atom is tuned far away from the cavity in frequency space. Vacuum Rabi splitting is thus typically observed in the form of an avoided crossing, occurring as the qubit frequency is tuned through resonance with the cavity\cite{Bishop}. Amazingly, at resonance the two frequencies $\omega_r$ and $\omega_a$ are never equal, despite the definition of resonance $\omega_r=\omega_a$. Coupling the system actually affects the modes of each individual subsystem. They will always differ by a frequency of at least $2\sqrt{n}g$. As $\Delta$ moves away from resonance, the states revert back to their unmixed form. An example of an avoided crossing is shown in Fig. (\ref{fig:AvoidedCrossing}).
 
@@ -479,7 +479,7 @@ In cQED the atom cannot be physically removed from the cavity to switch off the 
    \label{fig:AvoidedCrossing}
 \end{figure}
 
-As the two eigenstates $\ket{n_+}$ and $\ket{n_-}$ differ in energy, a system will precess between the two states at the rate $2\sqrt{n}g$
+As the two eigenstates $\ket{n_+}$ and $\ket{n_-}$ differ in energy, the system will precess between the two states at the rate $2g\sqrt{n}$
 
 \begin{equation}
 \ket{\psi(t)}=\ket{n_-}+\ket{n_+}e^{i2\sqrt{n}gt}.
@@ -562,11 +562,21 @@ Conversely, measuring the state of the qubit will can provide information about 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Highly multimodal photon-qubit strong coupling}\label{chap:Multimodal}
 
+The current cQED literature has typically operated around the fundamental resonator frequency. This behavior is well described by the theory in Chapter \ref{chap:Theoretical}. However, we are interested in the possibility of higher harmonics opening up a new, multimodal regime. Recall that resonance in the strong coupling limit causes the system to split into superposition eigenstates, which themselves have an effective frequency difference of $2g\sqrt{n}$. Far from resonance, these superpositions relax back to the uncoupled eigenstates. By fabricating long resonators, it is possible to to create a device in which the fundamental frequency $\omega_0$ is on the order of the avoided crossing difference $2g\sqrt{n}$. Effectively, we are interested in the regime
+
 \begin{equation}
-H_{MM}=\sum_{m=1}^M\left[\hbar\omega_r m (a^{\dag}a+\frac{1}{2})\right]+\hbar\omega_a\sigma_z+\sum^M_{m=1}\hbar g_m(a_m^+\sigma_-+a_m^-\sigma_+)
+\delta \omega \approx g
 \end{equation}
 
-Instead of simply describing the number of photons $\ket{n}$ of frequency $\omega_r$, we now expand our system to include the number of photons of any harmonic mode by $\ket{m,n}$. For example, the ground state of the coupled system for the $m^{\mathrm{th}}$ harmonic is $\ket{m,0,g}$. 
+for the mode splitting $\delta \omega \equiv \omega_n-\omega_{n-1}$.
+
+Again beginning with the Jaynes-Cummings model, we can take into account the infinite series of harmonics $m$ above the fundamental frequency,
+
+\begin{equation}
+H_{MM}=\sum_{m=1}^M\left[\hbar m\omega_r (a^{\dag}_m a_m+\frac{1}{2})\right]+\hbar\omega_a\sigma_z+\sum^M_{m=1}\hbar g_m(a_m^+\sigma_-+a_m^-\sigma_+)
+\end{equation}
+
+Instead of simply describing the number of photons $\ket{n}$ of frequency $\omega_r$, we now expand our system to include the number of excitations of any harmonic mode by $\ket{m,n}$. For example, the ground state of the coupled system for the $m^{\mathrm{th}}$ harmonic is $\ket{m,0,g}$. 
 
 Solving for the general manifold,
 
@@ -580,11 +590,11 @@ Solving for the general manifold,
 
 yields the solution:
 
-\begin{equation}
+\begin{equation}\label{eq:GeneralSubmatrix}
 \hbar \left(\begin{array}{cc}
 m\omega_r\left(n+\frac{1}{2}\right)-\frac{\omega_a}{2}	& g_m\sqrt{n} \\
  g_m\sqrt{n}					& m\omega_r\left(n-\frac{1}{2}\right)+\frac{\omega_a}{2}
-\end{array}\right)\\ 
+\end{array}\right).
 \end{equation}
 
 In order to examine the single excitation manifold of the multimodal system, we define the eigenstates
@@ -594,19 +604,53 @@ In order to examine the single excitation manifold of the multimodal system, we 
 \end{array}\right).
 \end{equation}
 
+This fixes $n=1$ for the general solution (\ref{eq:GeneralSubmatrix}). Examining the system at resonance with the fundamental frequency $\omega_r=\omega_a$,
+
 
 \begin{equation}\label{eq:MultimodalMatrix}
 H =  \hbar\left(\begin{array}{cccccccc}
 \omega_r 	& g_1 \\
- g_1   		& \omega_a \\
-&&\frac{6\omega_r-\omega_a}{2} & \sqrt{2}g_2 \\
-&&\sqrt{2}g_2		& \frac{2\omega_r+\omega_a}{2}\\
+ g_1   		& \omega_r \\
+&&\frac{5\omega_r}{2} & g_2 \\
+&&g_2		& \frac{3\omega_r}{2}\\
 &&&&\ddots\\
-&&&&&\frac{3m\omega_r-\omega_a}{2}	& g_m\sqrt{n} \\
-&&&&& g_m\sqrt{n}					& \frac{m\omega_r+\omega_a}{2}
+&&&&&\frac{(3m-1)\omega_r}{2}	& g_m \\
+&&&&& g_m				& \frac{(m+1)\omega_r}{2}
 \end{array} \right)
 \end{equation}
 
+we can solve for the eigenstates and eigenvalues of each mode $m$ for a single excitation, 
+
+\begin{eqnarray}
+v_{+,-}/\hbar = (-\frac{\omega_r-m \omega_r \pm \sqrt{4 g_m^2+\omega_r^2-2 m \omega_r^2+m^2 \omega_r^2)}}{2g_m}, 1) \\
+E_{+,-}/\hbar = m\omega_r \pm\frac{1}{2}\sqrt{4 g_m^2+m^2 \omega_r^2-2 m \omega_r^2+\omega_r^2}.
+\end{eqnarray}
+
+Making the multimodal approximation $\delta \omega \approx g$, we can (very loosely) let $\omega_r\approx g_m$ for all $m$,
+
+\begin{eqnarray}
+E_{+,-}/\hbar  =m\omega_r  \pm \frac{\sqrt{\omega_r^2 m^2 -2 \omega_r^2 m+5 \omega_r^2}}{2}.
+\end{eqnarray}
+
+Coupling the system causes a splitting of the eigenvalues that scales approximately linearly with the mode number $m$.
+
+IS THIS ACTUALLY HELPFUL / CORRECT?
+
+To achieve the multimodal approximation, we are operating for modes around $m=100$. By this model, the energy level splitting is unreasonably large, in fact 50x larger than for the first mode.
+
+?????????????????????????
+
+%\begin{equation}\label{eq:MultimodalMatrix}
+%H =  \hbar\left(\begin{array}{cccccccc}
+%\omega_r 	& g_1 \\
+% g_1   		& \omega_a \\
+%&&\frac{6\omega_r-\omega_a}{2} & \sqrt{2}g_2 \\
+%&&\sqrt{2}g_2		& \frac{2\omega_r+\omega_a}{2}\\
+%&&&&\ddots\\
+%&&&&&\frac{3m\omega_r-\omega_a}{2}	& g_m\sqrt{n} \\
+%&&&&& g_m\sqrt{n}					& \frac{m\omega_r+\omega_a}{2}
+%\end{array} \right)
+%\end{equation}
 
 %which yields the ``dressed" eigenstates\footnote{The variable $\theta_n$ satisfies $\tan{2\theta_n}=\frac{2g\sqrt{n}}{\Delta}$.} 
 %
@@ -676,9 +720,7 @@ BCS theory describes superconductivity as a microscopic effect caused by a conde
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transmission lines}\label{sec:TransmissionLines}
-USE GOPPL PAPER
-
-Transmission lines form the resonators of the cQED architecture. Superconductors are used to minimize dissipative losses. The circuits in this thesis were constructed using niobium wafers on sapphire substrate.
+Transmission lines form the resonators of the cQED architecture. Superconductors are used to minimize dissipative losses. The circuits in this thesis were constructed using niobium wafers on sapphire substrate.  More specific properties of the materials used are found in Section \ref{sec:CPW}. 
 
 Certain design considerations must be taken in to account in building superconducting resonators. Current equipment will cool equipment  to approx. 20mK, i.e. $k_BT\approx2.76*10^{-28}$ joules. In considering potential sources of decoherence, it is important that the circuit (including the qubit) operate at a significantly higher energy scale than the thermal bath, or else random fluctuations are likely to destroy any coherent behavior. The higher end of the microwave spectrum, i.e. the GHz regime, corresponds to approx. 250mK temperatures, i.e. $k_BT\approx3.45*10^{-27}$. Using simple Boltzmann statistics, the potential for an unwanted transition due to thermal fluctuations is sufficiently negligible
 
@@ -701,7 +743,7 @@ To describe a quantized transmission line resonator, we begin with the textbook 
 \omega = \sqrt{\frac{1}{LC}}.
 \end{equation}
 
-As a resonator, the LC circuit has quantum Hamiltonian identical in form to that of a simple harmonic oscillator. The two conjugate variables are the flux $\phi$ (from the inductor) and charge $q$ (from the capacitor)
+As a resonator, the LC circuit has a quantum Hamiltonian identical in form to that of a simple harmonic oscillator. The two conjugate variables are the flux $\phi$ (from the inductor) and charge $q$ (from the capacitor)
 
 \begin{equation}\label{eq:LCHamiltonian}
 H=\frac{q^2}{2C}+\frac{\phi^2}{2L}.
@@ -796,12 +838,118 @@ This Hamiltonian reflects the infinite, linear spectrum of mode frequencies that
  So far, our discussion of the circuit has been centered on the quantum variables $\phi$ and $q$. These terms describe the discrete nature of the possible electromagnetic excitations that may exist in the cavity. Remarkably, the resonator is sensitive to the existence of even a single photon. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Coplanar waveguide cavities}
-GOPPL PAPER
-This thesis used coplanar waveguide (CPW) geometry in constructing superconducting transmission line circuits. While other options exist, the CPW design places ground in the same plane as the transmission line, separated by a dielectric gap. 
+\subsection{Coplanar waveguide geometry}\label{sec:CPW}
+$\kappa=2/RC$
+$Q = \omega_0RC = \omega_0/\gamma$
+This thesis used coplanar waveguide (CPW) geometry in constructing superconducting transmission line circuits. Chips were fabricated using 200 nm thick niobium coatings on sapphire ($\mathrm{Al_2O_3}$) substrate. The niobium center pin, input/output lines, and ground are all in the same plane. General CPW geometry is diagrammed in Fig. \ref{fig:CPW}. Table \ref{tab:CPW} lists the particular dimensions used in this thesis. 
 
-The transmission line, shown in Fig. \ref{fig:CPW} as having width $a$, 
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|}
+   \hline
+   Dimension & Length ($\mu$m)\\
+   \hline
+   a & 10\\
+   \hline
+   s & 4.186\\
+   \hline
+   b & 18.372\\
+   \hline
+   t & 0.2\\
+   \hline
+   h & 500\\
+   \hline
+\end{tabular}
+\caption[CPW geometries.]{CPW geometries for 1+1 finger capacitor designs. Variables correspond to dimensions shown in Fig. \ref{fig:CPW}. The two lengths $l$ correspond to the 10-by-10mm and 22-by-22mm chip designs, respectively. }
+\label{tab:CPW}
+\end{table} 
 
+\begin{figure}[h] 
+   \centering
+   \includegraphics[width=4in]{SchusterCPW.png} 
+   \caption[Coplanar waveguide geometry]{Coplanar waveguide geometry. Left: Top view of CPW resonator with 1+1 finger capacitor design. Length $l$ not to scale. The ratio $s/a$ determines the impedance $Z_0$. Resonator and ground plane (blue) are separated by a dielectric gap (white). Right: Cross section of CPW resonator fabricated on top of a substrate (green). The dielectric gap is vacuum. Figs. modified from \cite{Schuster}.}
+   \label{fig:CPW}
+\end{figure}
+
+In experiment, multiple chip designs were tested. While the capacitor values listed in Table \ref{tab:CPW} are true for all devices, our initial tests of 1+1 finger capacitor designs had a low capacitance value of 1.56 fF. We therefore also built and tested 2+2 multi-finger design of the same dimensions. The increased capacitance (10.1fF) strengthened coupling. As a side note, the ground plane spacing of 4.186 $\mu$m was chosen to realize an impedance of 50 $\Omega$. 
+
+Two chip sizes were design and tested: 10-by-10mm and 22-by-22mm. As the purpose of this thesis is to investigate highly multimodal behavior, chips were designed to maximize the length of the resonator\footnote{I initially experimented with coplanar waveguide thicknesses of 10 $\mu$m and 20 $\mu$m, before only 10 $\mu$m were ever cooled down for experiments. Due to space constraints as well as the possibility for greater multimodal behavior in the longer 10 $\mu$m thickness devices, the thicker waveguide design was abandoned.}. To maintain ``linearity" in the waveguide, curvature in the line was constrained to a radius of 180 $\mu$m (in the center of the line). Each chip also had a 1mm border to ensure safety from scratches and defects in the fabrication process. These were the two primary constraints on the possible length of the devices. 
+
+The length of each device determines the resonance spectrum of the device. The first mode $l=1$ has a wavelength $\lambda=2l$, i.e. the lowest harmonic has a node in the center of the resonator. The entire spectrum is described by integer multiples ($n \in \mathbb{Z}$) of the resonant frequency, 
+
+\begin{equation}
+\nu=\frac{c}{\sqrt\epsilon_{\mathrm{eff}}}\frac{n}{2l}
+\end{equation}
+
+The effective dielectric permittivity is a function of the waveguide width, ground plane spacing, substrate thickness, and relative permittivity of the substrate. For all chips, these dimensions and the materials were held constant, such that $\epsilon_{\mathrm{eff}}=5.15$ and $v_{\mathrm{ph}}=c/\sqrt\epsilon_{\mathrm{eff}}\approx 132,000,000$ m/s. For the various resonator lengths used, Table (\ref{tab:ResonanceSpectrum}) gives the fundamental harmonic mode as well as all the modes in the relevant 4-11 GHz microwave range. As you can see, we have attempted to operate at exceptionally high harmonics. 
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|c|}
+   \hline
+   Chip design & Length (m) & $f_0$ (MHz) & GHz modes ($l$) \\
+   \hline
+   10mm, 1+1 finger & 0.363 & 181.678 & 22-60\\
+   \hline
+   10mm, 2+2 finger & 0.364 & 181.785 & 22-60\\
+   \hline
+   22mm 1+1 finger & 2.229 & 29.648 	& 136-371 \\
+   \hline
+\end{tabular}
+\caption[Chip modes]{Chip modes. The harmonic modes in the relevant 4-11 GHz range are given in the last column. Typically, only the fundamental mode is utilized.}
+\label{tab:ResonanceSpectrum}
+\end{table} 
+
+%\begin{table}[htb]
+%\centering
+%\begin{tabular}{|c|c|c|}
+%   \hline
+%   Chip design & Length (m) & Cap. (fF)\\
+%   \hline
+%   10mm, 1+1 finger & 0.363 & 1.56\\
+%   \hline
+%   10mm, 2+2 finger & 0.364 & 10.1\\
+%   \hline
+%   22mm 1+1 finger & 2.229 & 1.56\\
+%   \hline
+%\end{tabular}
+%\caption[]{}
+%\label{tab:CPW}
+%\end{table} 
+
+%%%%%%%%%
+
+We used transmission matrix analysis, more commonly known as ABCD matrices, to characterize CPW transmission spectra near resonance. A symmetrically coupled resonator is defined by the product of an input-, a transmission-, and an output matrix as 
+
+\begin{equation}
+\left(\begin{array}{cc}
+A & B \\
+C & D
+\end{array}\right) 
+=\left(\begin{array}{cc}
+1 & Z_{\mathrm{in}} \\
+0 & 1
+\end{array}\right) 
+\left(\begin{array}{cc}
+t_{11} & t_{12} \\
+t_{21} & t_{22}
+\end{array}\right) 
+\left(\begin{array}{cc}
+1 & Z_{\mathrm{out}} \\
+0 & 1
+\end{array}\right) 
+\end{equation}
+
+with input/output impedances $Z_{\mathrm{in/out}}=1/i\omega C_\kappa$ and the transmission matrix parameters\cite{Goppl}
+
+\begin{eqnarray}
+t_{11} &=& \cosh(\gamma l) \\
+t_{12} &=& Z_0\sinh(\gamma l) \\
+t_{21} &=& 1/Z_0\sinh(\gamma l) \\
+t_{22} &=& \cosh(\gamma l).
+\end{eqnarray}
+
+The wave propagation coefficient $\gamma=\alpha+i\beta$ is a function of the attenutation constant $\alpha=Z_0/Rl$ and the phase constant $\beta=\omega_n/v_{\mathrm{ph}}$. HOW TO CALC ATTENUATION CONSTANT
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Superconducting qubits}\label{sec:SuperconductingQubits}
@@ -1011,30 +1159,14 @@ H=\hbar \omega_r\left(a^\dag a + \frac{1}{2}\right) + \frac{1}{2}\hbar \omega_a 
 used as the starting point for Chapter \ref{chap:Theoretical}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Design and fabrication}
-As the purpose of this thesis is to investigate highly multimodal behavior, chips were designed to maximize the length of the resonator. Our lab contains two fridges NAMES, the typical chip size of which is 10mm-by-10mm. We also chose to design a 22mm-by-22mm chip, which necessitated a custom mounting plate. 
-
-Wafers were Niobium superconductor....sapphire substrate....
-
-The designs for this thesis relied on past experimental successes in our lab. I initially experimented with coplanar waveguide thicknesses of 10 $\mu$m and 20 $\mu$m, before only 10 $\mu$m were ever cooled down for experiments. Due to space constraints as well as the possibility for greater multimodal behavior in the longer 10 $\mu$m thickness devices, the thicker waveguide design was abandoned. 
-
-To maintain ``linearity" in the waveguide, curvature in the line was constrained to a radius of 180 $\mu$m (in the center of the line). Each chip also had a 1mm border to ensure safety from scratches and defects in the fabrication process. These were the two primary constraints on the possible length of the devices. 
-
-The waveguide was isolated by a ground plane spacing of 4.186 $\mu$m. The resonator was capacitively coupled to input and output lines of the same dimensions. Two types of capacitor couplings were tested. The first is a simple 10 mm two-finger capacitor. The second, which increases coupling is a multi-finger design with 4 fingers of the same dimensions. 
-
-Table (\ref{tab:ChipLengths}) gives the dimensions of the chips designed and tested. The length of each device determines the resonance spectrum of the device. The first mode $l=1$ has a wavelength $\lambda=2l$, i.e. the lowest harmonic has a node in the center of the resonator. The entire spectrum is described by integer multiples ($n \in \mathbb{Z}$) of the resonant frequency, 
-
-\begin{equation}
-\nu=\frac{c}{\sqrt\epsilon_{\mathrm{eff}}}\frac{n}{2l}
-\end{equation}
-
-The effective dielectric permittivity is a function of the waveguide width, ground plane spacing, substrate thickness, and relative permittivity of the substrate. For all chips, these dimensions and the materials were held constant, such that $\epsilon_{\mathrm{eff}}=5.15$. For the various resonator lengths used, Table (\ref{tab:ResonanceSpectrum}) gives the fundamental harmonic mode as well as all the modes in the relevant microwave range. 
+\section{Fabrication procedures}
+The fabrication process is long, time-consuming, and fraught with opportunity to make mistakes. Considering the large surface area used for each chip, it was especially difficult to fabricate without any defects, such as scratches, shorts, photoresist debris, etc. 
 
 \subsection{Masks}
 Masks were designed in AutoCAD 2011 and printed using optical lithography. Our masks were soda-lime  with a 530 nm layer of AZ1518 photoresist . A Heidelberg DWL-66 laser lithography system 405nm UV light with 40mW was used with a 4mm focal length writehead, providing minimum feature sizes of about 0.8 $\mu$m. TYPE OF MASK. This was then developed with an AZ400K dilution (1:4 with water) using a Laurell Technology Corporation Spin Processor EDC650Mz. Masks were etched with CR-7 chrome etchant and subsequently cleaned in PRS-1000. 
 
 \subsection{Photolithography}
-Wafers are 200 nm Niobium coatings on sapphire substrate. The niobium acts as the superconducting After dicing and cleaning, wafers are spun with HMDS and AZ5214 photoresist before being baked at 105$^o$ C for 2 minutes. The HMDS acts an adhesive for the photoresist. 
+Wafers are 200 nm niobium coatings on sapphire substrate. Niobium is a superconductor with critical temperature 9.2 K.  below After dicing and cleaning, wafers are spun with HMDS and AZ5214 photoresist before being baked at 105$^o$ C for 2 minutes. The HMDS acts an adhesive for the photoresist. 
 
 Photolithography was performed with a Karl Suss MJB4 Mask Aligner. The MJB4 uses broad spectrum light from a mercury lamp for the exposure illumination. Each wafer was exposed to the mask pattern for 4 seconds before being developed in AZ300MIF for approximately 1 minute. The mask pattern exposes the inverse of the coplanar waveguide geometry. This niobium will be removed during the etching process, i.e. the dielectric gaps will be removed. The vast majority of the niobium, constituting the center pin and ground plane, remains. 
 
@@ -1064,6 +1196,8 @@ Extensive wirebonding accomplished a few purposes. Thankfully, we had a new Ques
    \label{fig:Wirebonding}
 \end{figure}
 
+Our lab contains two fridges NAMES, the typical chip size of which is 10mm-by-10mm. We also chose to design a 22mm-by-22mm chip, which necessitated building a custom mounting plate, shown in Fig. (\ref{fig:CustomMount})
+
 \subsection{Electron beam lithography}
 The necessary feature size of our transmon is on the order of 100 nm, too small for optical lithography. Instead, all transmon qubits were fabricated using electron beam lithography. The initial mask design left a 40-by-300 $\mu$m dielectric gap 700 $\mu$m from one capacitive end of the resonator. The transmon is thus fabricated directly onto the sapphire substrate. 
 
@@ -1077,9 +1211,6 @@ A bilayer resist system was used, in which both chemicals are sensitive to elect
 \end{figure}
 
 After exposure, DEVELOP PROCESS IN LAB ASK SRI
-
-
-Remove 12nm of Al, develop exposed resist, then evaporate more Al
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

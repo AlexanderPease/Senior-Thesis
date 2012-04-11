@@ -15,18 +15,18 @@
 \contentsline {subsection}{\numberline {2.6.1}Strong coupling}{20}
 \contentsline {subsection}{\numberline {2.6.2}Dispersive Limit}{20}
 \contentsline {chapter}{\numberline {3}Highly multimodal photon-qubit strong coupling}{24}
-\contentsline {chapter}{\numberline {4}Implementing cQED with superconducting circuits}{25}
-\contentsline {section}{\numberline {4.1}Superconductivity}{25}
-\contentsline {section}{\numberline {4.2}Transmission lines}{26}
-\contentsline {subsection}{\numberline {4.2.1}Coplanar waveguide cavities}{29}
-\contentsline {section}{\numberline {4.3}Superconducting qubits}{29}
-\contentsline {subsection}{\numberline {4.3.1}Josephson junction}{29}
-\contentsline {subsection}{\numberline {4.3.2}Transmons}{29}
-\contentsline {section}{\numberline {4.4}Cavity-Qubit coupling}{32}
-\contentsline {section}{\numberline {4.5}Design and fabrication}{34}
-\contentsline {subsection}{\numberline {4.5.1}Masks}{34}
-\contentsline {subsection}{\numberline {4.5.2}Photolithography}{34}
-\contentsline {subsection}{\numberline {4.5.3}Etching}{35}
-\contentsline {subsection}{\numberline {4.5.4}Packaging}{35}
-\contentsline {subsection}{\numberline {4.5.5}Electron beam lithography}{36}
-\contentsline {chapter}{\numberline {5}Experimental methods and results}{38}
+\contentsline {chapter}{\numberline {4}Implementing cQED with superconducting circuits}{26}
+\contentsline {section}{\numberline {4.1}Superconductivity}{26}
+\contentsline {section}{\numberline {4.2}Transmission lines}{27}
+\contentsline {subsection}{\numberline {4.2.1}Coplanar waveguide geometry}{30}
+\contentsline {section}{\numberline {4.3}Superconducting qubits}{31}
+\contentsline {subsection}{\numberline {4.3.1}Josephson junction}{32}
+\contentsline {subsection}{\numberline {4.3.2}Transmons}{32}
+\contentsline {section}{\numberline {4.4}Cavity-Qubit coupling}{35}
+\contentsline {section}{\numberline {4.5}Fabrication procedures}{36}
+\contentsline {subsection}{\numberline {4.5.1}Masks}{36}
+\contentsline {subsection}{\numberline {4.5.2}Photolithography}{37}
+\contentsline {subsection}{\numberline {4.5.3}Etching}{37}
+\contentsline {subsection}{\numberline {4.5.4}Packaging}{37}
+\contentsline {subsection}{\numberline {4.5.5}Electron beam lithography}{38}
+\contentsline {chapter}{\numberline {5}Experimental methods and results}{40}

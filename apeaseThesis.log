@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  29 MAR 2012 01:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  4 APR 2012 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,28 +379,21 @@ LaTeX Warning: Citation `Semba' on page 13 undefined on input line 292.
 File: Goppl-Higher-Modes.png Graphic file (type png)
 
 <use Goppl-Higher-Modes.png>
-Package pdftex.def Info: Goppl-Higher-Modes.png used on input line 436.
+Package pdftex.def Info: Goppl-Higher-Modes.png used on input line 435.
 (pdftex.def)             Requested size: 180.67499pt x 122.90396pt.
  <placeholder.jpg, id=80, 501.875pt x 501.875pt>
 File: placeholder.jpg Graphic file (type jpg)
 
 <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 436.
+Package pdftex.def Info: placeholder.jpg used on input line 435.
 (pdftex.def)             Requested size: 180.67499pt x 180.67485pt.
-
-
-LaTeX Warning: Citation `Goppl' on page 17 undefined on input line 437.
-
-
-LaTeX Warning: Citation `Goppl' on page 17 undefined on input line 437.
-
-[17 <./Goppl-Higher-Modes.png> <./placeholder.jpg>]
+ [17 <./Goppl-Higher-Modes.png> <./placeholder.jpg>]
 <SchusterResonantEnergyLevels.png, id=85, 661.47125pt x 480.79625pt>
 File: SchusterResonantEnergyLevels.png Graphic file (type png)
 
 <use SchusterResonantEnergyLevels.png>
 Package pdftex.def Info: SchusterResonantEnergyLevels.png used on input line 46
-6.
+5.
 (pdftex.def)             Requested size: 252.94499pt x 183.84894pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -410,7 +403,7 @@ Missing character: There is no ” in font cmr10!
 File: SchusterAvoidedCrossing.png Graphic file (type png)
 
 <use SchusterAvoidedCrossing.png>
-Package pdftex.def Info: SchusterAvoidedCrossing.png used on input line 477.
+Package pdftex.def Info: SchusterAvoidedCrossing.png used on input line 476.
 (pdftex.def)             Requested size: 289.07999pt x 181.34065pt.
 
 
@@ -418,17 +411,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18 <./SchusterResonantEnergyLevels.png>]
 
-LaTeX Warning: Citation `Zhu' on page 19 undefined on input line 492.
+LaTeX Warning: Citation `Zhu' on page 19 undefined on input line 491.
 
 
-LaTeX Warning: Citation `Tian' on page 19 undefined on input line 492.
+LaTeX Warning: Citation `Tian' on page 19 undefined on input line 491.
 
 [19 <./SchusterAvoidedCrossing.png>]
 <HouckParameterSpace.png, id=96, 812.03375pt x 511.9125pt>
 File: HouckParameterSpace.png Graphic file (type png)
 
 <use HouckParameterSpace.png>
-Package pdftex.def Info: HouckParameterSpace.png used on input line 501.
+Package pdftex.def Info: HouckParameterSpace.png used on input line 500.
 (pdftex.def)             Requested size: 289.07999pt x 182.23402pt.
  [20 <./HouckParameterSpace.png (PNG copy)>]
 <SchusterDispersiveEnergyLevels.png, id=100, 914.41624pt x 725.71124pt>
@@ -436,19 +429,19 @@ File: SchusterDispersiveEnergyLevels.png Graphic file (type png)
 
 <use SchusterDispersiveEnergyLevels.png>
 Package pdftex.def Info: SchusterDispersiveEnergyLevels.png used on input line 
-542.
+541.
 (pdftex.def)             Requested size: 216.81pt x 172.05922pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `sec:DiVincezo' on page 21 undefined on input line 547
+LaTeX Warning: Reference `sec:DiVincezo' on page 21 undefined on input line 546
 .
 
 
 LaTeX Warning: Reference `fig:DispersiveStrong' on page 21 undefined on input l
-ine 551.
+ine 550.
 
 [21]
 <SchusterDispersiveFrequencyShifts.png, id=104, 366.36874pt x 247.92625pt>
@@ -456,7 +449,7 @@ File: SchusterDispersiveFrequencyShifts.png Graphic file (type png)
 
 <use SchusterDispersiveFrequencyShifts.png>
 Package pdftex.def Info: SchusterDispersiveFrequencyShifts.png used on input li
-ne 555.
+ne 554.
 (pdftex.def)             Requested size: 252.94499pt x 171.17143pt.
 
 
@@ -467,104 +460,93 @@ eFrequencyShifts.png>]
 Chapter 3.
 [24
 
-]
+] [25]
 Chapter 4.
-[25
+[26
 
-] <BishopLC.png, id=119, 183.68625pt x 182.6825pt>
+] <BishopLC.png, id=122, 183.68625pt x 182.6825pt>
 File: BishopLC.png Graphic file (type png)
  <use BishopLC.png>
-Package pdftex.def Info: BishopLC.png used on input line 693.
+Package pdftex.def Info: BishopLC.png used on input line 734.
 (pdftex.def)             Requested size: 85.82802pt x 85.35826pt.
 
-<BishopLCChain.png, id=120, 584.1825pt x 170.6375pt>
+<BishopLCChain.png, id=123, 584.1825pt x 170.6375pt>
 File: BishopLCChain.png Graphic file (type png)
  <use BishopLCChain.png>
-Package pdftex.def Info: BishopLCChain.png used on input line 693.
+Package pdftex.def Info: BishopLCChain.png used on input line 734.
 (pdftex.def)             Requested size: 292.23314pt x 85.35826pt.
 
-[26 <./BishopLC.png> <./BishopLCChain.png>] [27]
+[27 <./BishopLC.png> <./BishopLCChain.png>] [28]
 
-LaTeX Warning: Reference `:LCLagrangianIntegral' on page 28 undefined on input 
-line 782.
+LaTeX Warning: Reference `:LCLagrangianIntegral' on page 29 undefined on input 
+line 823.
 
-[28]
+[29] <SchusterCPW.png, id=135, 782.925pt x 265.99374pt>
+File: SchusterCPW.png Graphic file (type png)
+ <use SchusterCPW.png>
+Package pdftex.def Info: SchusterCPW.png used on input line 868.
+(pdftex.def)             Requested size: 289.07999pt x 98.2132pt.
 
-LaTeX Warning: Reference `fig:CPW' on page 29 undefined on input line 803.
+[30 <./SchusterCPW.png>] [31]
 
+LaTeX Warning: Citation `Devoret2004' on page 32 undefined on input line 957.
 
-LaTeX Warning: Citation `Devoret2004' on page 29 undefined on input line 810.
-
-
-LaTeX Warning: Citation `Tinkham' on page 29 undefined on input line 814.
-
-[29] <Koch-Transmon-eigenenergies.png, id=135, 907.39pt x 698.61pt>
+[32] <Koch-Transmon-eigenenergies.png, id=147, 907.39pt x 698.61pt>
 File: Koch-Transmon-eigenenergies.png Graphic file (type png)
 
 <use Koch-Transmon-eigenenergies.png>
-Package pdftex.def Info: Koch-Transmon-eigenenergies.png used on input line 869
-.
+Package pdftex.def Info: Koch-Transmon-eigenenergies.png used on input line 101
+6.
 (pdftex.def)             Requested size: 361.34999pt x 278.2025pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31 <./Koch-Transmon-eigenenergies.png (PNG copy)>]
-<KochTransmon.png, id=143, 561.09625pt x 520.94624pt>
+[33] [34 <./Koch-Transmon-eigenenergies.png (PNG copy)>]
+<KochTransmon.png, id=154, 561.09625pt x 520.94624pt>
 File: KochTransmon.png Graphic file (type png)
  <use KochTransmon.png>
-Package pdftex.def Info: KochTransmon.png used on input line 968.
+Package pdftex.def Info: KochTransmon.png used on input line 1115.
 (pdftex.def)             Requested size: 233.5184pt x 216.81pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[32] [33 <./KochTransmon.png>]
-
-LaTeX Warning: Reference `tab:ChipLengths' on page 34 undefined on input line 1
-025.
-
-
-LaTeX Warning: Reference `tab:ResonanceSpectrum' on page 34 undefined on input 
-line 1031.
-
-[34]
+[35 <./KochTransmon.png>] [36]
 File: placeholder.jpg Graphic file (type jpg)
  <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 1046.
+Package pdftex.def Info: placeholder.jpg used on input line 1177.
 (pdftex.def)             Requested size: 144.54pt x 144.53682pt.
- <STS.jpg, id=154, 103.9885pt x 138.919pt>
-File: STS.jpg Graphic file (type jpg)
 
-<use STS.jpg>
-Package pdftex.def Info: STS.jpg used on input line 1046.
+<STS.jpg, id=163, 103.9885pt x 138.919pt>
+File: STS.jpg Graphic file (type jpg)
+ <use STS.jpg>
+Package pdftex.def Info: STS.jpg used on input line 1177.
 (pdftex.def)             Requested size: 144.54pt x 193.09895pt.
 
 
-LaTeX Warning: Reference `fig:Mounts' on page 35 undefined on input line 1052.
+LaTeX Warning: Reference `fig:Mounts' on page 37 undefined on input line 1183.
 
-[35 <./STS.jpg>]
+[37 <./STS.jpg>]
 File: placeholder.jpg Graphic file (type jpg)
  <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 1062.
+Package pdftex.def Info: placeholder.jpg used on input line 1193.
 (pdftex.def)             Requested size: 144.54pt x 144.53682pt.
 File: placeholder.jpg Graphic file (type jpg)
  <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 1062.
+Package pdftex.def Info: placeholder.jpg used on input line 1193.
 (pdftex.def)             Requested size: 144.54pt x 144.53682pt.
 
-<RaitheLine.jpg, id=158, 216.81pt x 162.6075pt>
+
+LaTeX Warning: Reference `fig:CustomMount' on page 38 undefined on input line 1
+198.
+
+[38] <RaitheLine.jpg, id=170, 216.81pt x 162.6075pt>
 File: RaitheLine.jpg Graphic file (type jpg)
  <use RaitheLine.jpg>
-Package pdftex.def Info: RaitheLine.jpg used on input line 1074.
+Package pdftex.def Info: RaitheLine.jpg used on input line 1207.
 (pdftex.def)             Requested size: 216.81pt x 162.61453pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[36] [37 <./RaitheLine.jpg>]
+[39 <./RaitheLine.jpg>]
 Chapter 5.
-[38
+[40
 
 ] (./apeaseThesis.bbl
 Underfull \hbox (badness 2772) in paragraph at lines 48--50
@@ -572,9 +554,9 @@ Underfull \hbox (badness 2772) in paragraph at lines 48--50
  quan-tum com-pu-ta-tion,''
  []
 
-[39
+[41
 
-]) [40] (./apeaseThesis.aux)
+]) [42] (./apeaseThesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -583,10 +565,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3369 strings out of 493633
- 45876 string characters out of 3143378
- 113176 words of memory out of 3000000
- 6576 multiletter control sequences out of 15000+200000
+ 3378 strings out of 493633
+ 46017 string characters out of 3143378
+ 113242 words of memory out of 3000000
+ 6584 multiletter control sequences out of 15000+200000
  16958 words of font info for 66 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  38i,16n,43p,1214b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -609,10 +591,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2011/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on apeaseThesis.pdf (41 pages, 1014019 bytes).
+Output written on apeaseThesis.pdf (43 pages, 1031776 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
